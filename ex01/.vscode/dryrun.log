@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/bekram/varios/dev/aparolar/cpp-00/ex01'
+clang++ -Wall -Werror -Wextra -std=c++98 -pedantic -Wall -Werror -Wextra -std=c++98 -pedantic   -c -o phonebook.o phonebook.cpp
+clang++ -Wall -Werror -Wextra -std=c++98 -pedantic phonebook.cpp -o phonebook
+make: Leaving directory '/home/bekram/varios/dev/aparolar/cpp-00/ex01'
+ 
