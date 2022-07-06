@@ -1,7 +1,7 @@
 NAME		=	phonebook
 CXX			=	clang++ $(CXXFLAGS)
 CXXFLAGS 	=	-Wall -Werror -Wextra -std=c++98 -pedantic
-SRCS		=	phonebook.cpp
+SRCS		=	main.cpp
 OBJS		=	$(SRCS:.cpp=.o)
 
 $(NAME):		$(OBJS)

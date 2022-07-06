@@ -6,11 +6,12 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/02 17:34:20 by aparolar          #+#    #+#             */
-/*   Updated: 2022/07/04 20:27:07 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/07/06 17:08:10 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
+#include <string>
 #include <ctype.h>
 
 int	main(int argc, char **argv)
@@ -21,10 +22,12 @@ int	main(int argc, char **argv)
 	{
 		//std::getline(std::cin, str);
 		std::cin >> str;
-		switch (std::string(str))
-		{
-			case 
-		}
+		if (str.compare("ADD"))
+		{}
+		else if (str.compare("SEARCH"))
+		{}
+		else if (str.compare("EXIT"))
+			break ;
 	}
 	return (0);
 }
