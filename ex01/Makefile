@@ -1,7 +1,9 @@
 NAME		=	phonebook
-CXX			=	clang++ $(CXXFLAGS)
-CXXFLAGS 	=	-Wall -Werror -Wextra -std=c++98 -pedantic
-SRCS		=	main.cpp
+CXX			=	clang++ $(LDFLAGS) $(CXXFLAGS) -std=c++98
+42FLAGS		=	-Wall -Werror -Wextra
+CXXFLAGS 	=	-g3 #-pedantic
+LDFLAGS		=	-fsanitize=address
+SRCS		=	main.cpp contact.cpp phonebook.cpp
 OBJS		=	$(SRCS:.cpp=.o)
 
 $(NAME):		$(OBJS)
