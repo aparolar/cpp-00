@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/09 16:46:30 by aparolar          #+#    #+#             */
-/*   Updated: 2022/07/15 17:16:45 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/07/15 17:52:49 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -141,7 +141,7 @@ void	Account::makeDeposit( int deposit )
 		this->totalNbDeposits++;
 		std::cout << getColumnAndValue("deposit", deposit) << ";";
 		std::cout << displayAmount() << ";";
-		std::cout << getColumnAndValue("nb_deposits", nbDeposits) << ";";
+		std::cout << getColumnAndValue("nb_deposits", nbDeposits);
 	}
 	else
 		std::cout << getColumnAndValue("deposit", "refused");
@@ -162,7 +162,7 @@ bool	Account::makeWithdrawal( int withdrawal )
 		totalNbWhitdrawals++;
 		std::cout << getColumnAndValue("withdrawal", withdrawal) << ";";
 		std::cout << displayAmount() << ";";
-		std::cout << getColumnAndValue("nb_withdrawals", nbWithdrawals) << ";";
+		std::cout << getColumnAndValue("nb_withdrawals", nbWithdrawals);
 	}
 	else
 		std::cout << getColumnAndValue("withdrawal", "refused");
