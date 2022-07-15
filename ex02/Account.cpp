@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/09 16:46:30 by aparolar          #+#    #+#             */
-/*   Updated: 2022/07/15 17:07:28 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/07/15 17:16:45 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -159,6 +159,7 @@ bool	Account::makeWithdrawal( int withdrawal )
 		amount -= withdrawal;
 		totalAmount -= withdrawal;
 		nbWithdrawals++;
+		totalNbWhitdrawals++;
 		std::cout << getColumnAndValue("withdrawal", withdrawal) << ";";
 		std::cout << displayAmount() << ";";
 		std::cout << getColumnAndValue("nb_withdrawals", nbWithdrawals) << ";";
