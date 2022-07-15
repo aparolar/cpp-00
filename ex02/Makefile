@@ -1,8 +1,8 @@
 NAME		=	account
-CXX			=	clang++ $(LDFLAGS) $(CXXFLAGS) -std=c++98
-42FLAGS		=	-Wall -Werror -Wextra
-CXXFLAGS 	=	-g3 -pedantic
-LDFLAGS		=	-fsanitize=address
+CXX			=	clang++ $(FLAGS) -std=c++98
+FLAGS		=	-Wall -Werror -Wextra
+#CXXFLAGS 	=	-g3 -pedantic
+#LDFLAGS		=	-fsanitize=address
 SRCS		=	tests.cpp Account.cpp
 OBJS		=	$(SRCS:.cpp=.o)
 
