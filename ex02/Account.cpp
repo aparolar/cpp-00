@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/09 16:46:30 by aparolar          #+#    #+#             */
-/*   Updated: 2022/07/15 17:52:49 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/08/08 18:46:37 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -148,7 +148,7 @@ void	Account::makeDeposit( int deposit )
 	std::cout << std::endl;
 }
 
-bool	Account::makeWithdrawal( int withdrawal )
+void	Account::makeWithdrawal( int withdrawal )
 {
 
 	std::cout << Account::getTimestamp();
@@ -167,7 +167,6 @@ bool	Account::makeWithdrawal( int withdrawal )
 	else
 		std::cout << getColumnAndValue("withdrawal", "refused");
 	std::cout << std::endl;
-	return (true);
 }
 
 int		Account::getNbAccounts()

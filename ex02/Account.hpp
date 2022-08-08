@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/09 16:46:49 by aparolar          #+#    #+#             */
-/*   Updated: 2022/07/15 16:10:46 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/08/08 18:46:07 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ class Account
 		~Account();
 		
 		void	makeDeposit( int deposit );
-		bool	makeWithdrawal( int withdrawal );
+		void	makeWithdrawal( int withdrawal );
 		int		checkAmount( void ) const;
 		void	displayStatus( void ) const;
 		static std::string	getColumnAndValue(std::string column, int value);
