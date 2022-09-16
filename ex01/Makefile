@@ -1,7 +1,7 @@
 NAME		=	phonebook
-CXX			=	clang++ $(LDFLAGS) $(CXXFLAGS) -std=c++98
+CXX			=	clang++ $(LDFLAGS) $(CXXFLAGS) -std=c++98 -pedantic
 42FLAGS		=	-Wall -Werror -Wextra
-CXXFLAGS 	=	-g3 #-pedantic
+CXXFLAGS 	=	$(42FLAGS)
 LDFLAGS		=	-fsanitize=address
 SRCS		=	main.cpp contact.cpp phonebook.cpp
 OBJS		=	$(SRCS:.cpp=.o)
@@ -14,10 +14,10 @@ all:			$(NAME)
 re:				fclean all
 
 clean:			
-				rm *.o
+				rm -fr *.o
 
 fclean:			clean
-				rm $(NAME)
+				rm -fr $(NAME)
 
 .phony:			all re clean fclean
 				

@@ -1,8 +1,6 @@
 NAME		=	account
-CXX			=	clang++ $(FLAGS) -std=c++98
+CXX			=	clang++ $(FLAGS) -std=c++98 -pedantic
 FLAGS		=	-Wall -Werror -Wextra
-#CXXFLAGS 	=	-g3 -pedantic
-#LDFLAGS		=	-fsanitize=address
 SRCS		=	tests.cpp Account.cpp
 OBJS		=	$(SRCS:.cpp=.o)
 
@@ -14,10 +12,10 @@ all:			$(NAME)
 re:				fclean all
 
 clean:			
-				rm *.o
+				rm -fr *.o
 
 fclean:			clean
-				rm $(NAME)
+				rm -fr $(NAME)
 
 .phony:			all re clean fclean
 				

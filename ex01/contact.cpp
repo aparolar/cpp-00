@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 17:24:52 by aparolar          #+#    #+#             */
-/*   Updated: 2022/07/09 14:56:50 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/09/16 11:28:40 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,23 +30,23 @@ void	Contact::add()
 {
 	std::cout << "-----  Add contact  -----" << std::endl;
 	std::cout << "Name: ";
-	std::cin >> name;
+	std::getline(std::cin , name);
 	std::cout << "Last Name: ";
-	std::cin >> lastName;
+	std::getline(std::cin, lastName);
 	std::cout << "Nickname: ";
-	std::cin >> nickName;
+	std::getline(std::cin, nickName);
 	std::cout << "Phone: ";
-	std::cin >> phone;
+	std::getline(std::cin, phone);
 	std::cout << "Your darkest secret: ";
-	std::cin >> darkestSecret;
+	std::getline(std::cin, darkestSecret);
 	std::cout << "----- Contact added -----" << std::endl << std::endl;
 }
 
 void	Contact::showInfo()
 {
-	std::cout << std::setw(10) << "Name: " << name << std::endl;
-	std::cout << std::setw(10) << "Last Name: " << lastName << std::endl;
-	std::cout << std::setw(10) << "Nickname: " << nickName << std::endl;
-	std::cout << std::setw(10) << "Phone: " << phone << std::endl;
-	std::cout << std::setw(10) << "Your darkest seacret: " << darkestSecret << std::endl;
+	std::cout << "Name: " << name << std::endl;
+	std::cout << "Last Name: " << lastName << std::endl;
+	std::cout << "Nickname: " << nickName << std::endl;
+	std::cout << "Phone: " << phone << std::endl;
+	std::cout << "Your darkest secret: " << darkestSecret << std::endl;
 }

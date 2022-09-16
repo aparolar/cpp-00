@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/02 17:34:20 by aparolar          #+#    #+#             */
-/*   Updated: 2022/07/02 17:58:15 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/09/16 12:33:25 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ int	main(int argc, char **argv)
 				{
 					print_upper(*(argv + i));
 					i++;
+					if (i < argc)
+						std::cout << " ";
 				}
 				std::cout << std::endl;
 		}

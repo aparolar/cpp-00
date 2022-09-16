@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/02 17:34:20 by aparolar          #+#    #+#             */
-/*   Updated: 2022/07/09 15:09:13 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/09/16 11:15:47 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ int	main(void)
 		{
 			index = -1;
 			phonebook.showList();
+			std::cout << "Chose a index : ";
 			std::cin >> str;
 			ss <<  str;
 			ss >> index;

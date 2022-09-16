@@ -12,10 +12,10 @@ all:			$(NAME)
 re:				fclean all
 
 clean:			
-				rm *.o
+				rm -fr *.o
 
 fclean:			clean
-				rm $(NAME)
+				rm -fr $(NAME)
 
 .phony:			all re clean fclean
 				
