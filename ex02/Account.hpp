@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/09 16:46:49 by aparolar          #+#    #+#             */
-/*   Updated: 2022/08/08 18:46:07 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/09/16 14:11:34 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 # define TERM_RED     "\033[31m"
 # define TERM_GREEN   "\033[32m"
 # define TERM_ORANGE  "\033[33m"
-# define TERM_BLUE    "\033[34m"
+# define TERM_BLUE    "\033[36m"
 # define TERM_RST     "\033[0m"
 
 class Account

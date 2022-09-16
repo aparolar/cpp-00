@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/02 17:34:20 by aparolar          #+#    #+#             */
-/*   Updated: 2022/09/16 12:33:25 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/09/16 14:02:40 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 static void	print_upper(char *s)
 {
 		while (*s)
-				std::cout << (char)toupper(*s++);
+				std::cout << (char)std::toupper(*s++);
 }
 
 int	main(int argc, char **argv)
